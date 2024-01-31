@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appreciation page Basra date syrup</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: #d11a27;
+      margin-top: 90px;
+    }
+    hr {
+      max-width: 50%;
+    }
+    h2 {
+      text-align: center;
+      font-size: 19px;
+      border: 1px dotted #d11a27;
+      border-radius: 8px;
+      padding: 20px 25px;
+      margin: 30px 200px;
+      background: #d11a27;
+      opacity: 0.8;
+      color: white;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 14px;
+      margin: 30px 200px;
+    }
+    span {
+      color: #d11a27;
+      font-weight: bold;
+    }
+
+    ul {
+      text-align: center;
+      color: #d11a27;
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #d11a27;
+    }
+
+    a:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    button {
+      font-size: 18px;
+      font-weight: 700;
+      background: linear-gradient(
+        110.4deg,
+        rgb(247, 112, 15) 6.4%,
+        rgb(248, 50, 88) 100.2%
+      );
+      color: white;
+      display: block;
+      margin: 50px auto;
+      padding: 15px 20px;
+      border: 1px dotted #d11a27;
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .banner {
+      display: block;
+      margin: 0 auto;
+      max-width: 50%;
+      border-radius: 10px;
+      border: 2px solid #d11a27;
+      padding: 5px;
+      background: #d11a27;
+    }
+    .logo {
+      width: 60px;
+      display: block;
+      margin: 0 auto;
+      border: 3px solid #d11a27;
+      border-radius: 50px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 60px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/282/original/datteln.jpg?1703452773"
+        alt="Logo"
+      />
+      <hr />
+      <h1>I love sweet dates</h1>
+      <h2>Especially the 100% sugarfree date syrup</h2>
+      <img
+        class="banner"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/280/original/basra-homepage-header-e1598795898504.jpg?1703452075"
+        alt="Basra date syrup"
+      />
+      <p>
+        <span>Basra Date Syrup</span> is an authentic Iraqi date syrup. In
+        addition to a delicious sweet taste, Basra Date Syrup also has several
+        other benefits. Thanks to the recipe and an advanced production process
+        that is continuously being refined, Basra Date Syrup does not
+        crystallize. Because Basra Date Syrup does not crystallize, you can
+        enjoy a tasty and high-quality product until the last drop. The liquid
+        structure makes Basra Date Syrup very suitable for food preparation.
+        Whether you are cooking or using it to flavor a dish, Basra Date Syrup
+        is your sweet seasoning.
+      </p>
+
+      <h2>My favourite recipes with Basra date syrup</h2>
+
+      <ul>
+        <li>
+          <a
+            href="https://basradatesyrup.com/en/basrarecept/fast-tajine-with-date-syrup/"
+            target="_blank"
+          >
+            <strong>📌Fast tajine with date syrup</strong>
+          </a>
+        </li>
+        <br />
+        <li>
+          <a
+            href="https://boroughmarket.org.uk/recipes/pancakes-with-basra-date-syrup-clotted-cream/"
+            target="_blank"
+          >
+            <strong>📌Pancakes with Basra date syrup & clotted cream</strong>
+          </a>
+        </li>
+      </ul>
+
+      <button>↪ Buy Basra date syrup here ↩</button>
+
+      <p class="footer">Coded by <em>Verena Al-Khazraji</em></p>
+    </div>
+    <script>
+      function buySyrup() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email?");
+        let amount = prompt(
+          "How many glasses of date syrup are you looking to buy?"
+        );
+        if (amount >= 500) {
+          alert(
+            `Thank you ${name}. Please contact us directly at basradatesyrup@iraq.iq for further information on orders, purchases and delivery!`
+          );
+        } else {
+          alert(
+            `Thank you ${name}. We'll be in touch with you as soon as possible!`
+          );
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buySyrup);
+    </script>
+  </body>
+</html>
